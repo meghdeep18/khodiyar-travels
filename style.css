@@ -466,7 +466,7 @@ span:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     padding-bottom: 5vw;
 }
 
@@ -577,13 +577,12 @@ span:hover{
   animation-iteration-count: infinite;
   animation-name: scroll;
 }
- /* #string{ */
-    /* height: 200px; */
-    /* width: 100%; */
-    /* background-color: red; */
-    /* position: relative; */
+ #string{ 
+    height: 200px;
+    width: 100%;
+    position: relative;
     
-/* }  */
+ } 
 
 @keyframes scroll{
   0%{
