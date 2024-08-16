@@ -27,7 +27,7 @@ html, body{
     mix-blend-mode: difference;
     pointer-events: none; 
     transform: translate(-50%, -50%);
-    transition: all 0.2s ease-out;
+    transition: all  ease-out;
 }
 
 .cursor-active{
@@ -65,11 +65,12 @@ html, body{
 .main{
     background-color: #0f0d0d;
      overflow: hidden;
+     cursor: none;
 }
 
 ::selection
 {
-    background-color: #000080;
+    
     color: #6c6c6c
 }
 
@@ -576,6 +577,13 @@ span:hover{
   animation-iteration-count: infinite;
   animation-name: scroll;
 }
+ /* #string{ */
+    /* height: 200px; */
+    /* width: 100%; */
+    /* background-color: red; */
+    /* position: relative; */
+    
+/* }  */
 
 @keyframes scroll{
   0%{
@@ -587,6 +595,67 @@ span:hover{
   }
 }
 
+
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+    #nav h4, .page1 h1, .page1 h2, .page2 h1, .page2-left h2, .page2-right p, .page3 h1, .page5-inner .row h1, .page5-inner .row h4, .page5-inner .row p {
+        font-size: 5vw; /* Adjust font sizes for smaller screens */
+    }
+    #nav img, .page3-part1 img {
+        width: 80%; /* Scale down images */
+    }
+    #nav {
+        padding: 0 15px; /* Reduce padding for smaller screens */
+    }
+    /* Adjust margins and paddings to fit better */
+    .page1 h1, .page1 h2 {
+        margin-left: 5vw;
+    }
+    .page2-right button {
+        width: 90%;
+    }
+}
+
+/* For mobile */
+@media screen and (max-width: 480px) {
+    #nav h4, .page1 h1, .page1 h2, .page2 h1, .page2-left h2, .page2-right p, .page3 h1, .page5-inner .row h1, .page5-inner .row h4, .page5-inner .row p {
+        font-size: 6vw; /* Further adjustments for mobile */
+    }
+    .footer {
+        padding: 10vw 2vw; /* Reduce padding */
+    }
+    /* Adjust specific sections for mobile layout */
+    .page2-container {
+        flex-direction: column; /* Stack elements on top of each other */
+    }
+    .page2-left, .page2-right {
+        width: 100%; /* Make sections full width */
+    }
+    .page2-right button {
+        width: 100%;
+    }
+}
+.page1, .page2, .page3, .page4, .page5 {
+    width: 90%;
+    margin: 0 auto;
+}
+.page3-part1 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .page3-part1 {
+        flex-direction: row; /* Horizontal layout on larger screens */
+    }
+}
+h1, h2, h4 {
+    font-size: calc(2vw + 1em);
+}
+#menu {
+    display: none;
+}
 
 
 
