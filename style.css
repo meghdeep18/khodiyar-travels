@@ -68,11 +68,9 @@ html, body{
      cursor: none;
 }
 
-::selection
+/* ::selection
 {
-    
-    color: #6c6c6c
-}
+} */
 
 
 #nav{
@@ -183,7 +181,7 @@ html, body{
     transform-origin: 0% -50%;
 }
 span:hover{
-    color: maroon;
+    color: #6c6c6c;
 }
 
 .page1 h2{
@@ -452,8 +450,6 @@ span:hover{
 .row>p span:nth-child(1){
     margin-right: 6vw;
 }
-
-
 .footer{
     width: 100%;
     height: 150vh;
@@ -543,8 +539,6 @@ span:hover{
     transition: all 0.2s;
     cursor: pointer;
 }
-
-
 /* SCroll icon */
 
 .icon-scroll,
@@ -652,14 +646,11 @@ span:hover{
 h1, h2, h4 {
     font-size: calc(2vw + 1em);
 }
-#menu {
-    display: none;
+/* work page starts  */
+#work{
+    text-decoration: none;
+    color: white;
 }
-
-
-
-
-
 
 
 

@@ -172,10 +172,10 @@ document.querySelector('#nav').addEventListener('mouseleave', function(){
 
 
 document.querySelector(".lower h1").addEventListener("mouseenter", function(){
-    cursor.style.transform = "translate(-50%, -50%) scale(2)";
+    cursor.style.transform = "translate(-50%, -50%) scale(3)";
 })
 document.querySelector("#nav #circle").addEventListener("mouseenter", function(){
-    cursor.style.transform = "translate(-50%, -50%) scale(2)";
+    cursor.style.transform = "translate(-50%, -50%) scale(3)";
 })
 document.querySelector(".lower h1").addEventListener("mouseleave", function(){
     cursor.style.transform = "translate(-50%, -50%) scale(1)";
@@ -500,3 +500,4 @@ string.addEventListener("mouseleave",function(){
         ease:"bounce.out"
     })
 })
+
