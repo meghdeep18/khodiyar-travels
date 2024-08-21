@@ -516,10 +516,13 @@ body {
 /* Footer */
 /* Footer */
 .footer {
-    background-color:#222;  /* Dark background to differentiate from the content */
+    background-color:maroon;  /* Dark background to differentiate from the content */
     color: #fff;  /* White text for contrast */
     padding: 50px 5vw;  /* Padding for spacing */
     text-align: center;  /* Center-align the text */
+    border-top-left-radius: 7%   ;
+    border-top-right-radius: 7%   ;
+
 }
 
 .footer .upper {

@@ -328,8 +328,8 @@ function anim(){
     })
 
     tl2.to(".main", {
-        backgroundColor: "maroon",
-        color: "#fff",
+        backgroundColor: "#fff",
+        color: "#0000",
     })
 
 

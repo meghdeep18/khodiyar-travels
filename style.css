@@ -93,7 +93,7 @@ html, body{
     top: 0;
     z-index: 90;
     display: none;
-    background-color: #EDBFFF;
+    background-color: maroon;
     transition: background-color 0.5s ease;
 }
 
@@ -140,7 +140,7 @@ html, body{
     background-color: #fff;
 }
 #nav #circle:hover{
-    background-color: #EDBFFF;
+    background-color: maroon;
 }
 
 #nav h4{
@@ -207,7 +207,7 @@ span:hover{
     padding: 100px 5vw;
     border-bottom: 2px solid #6c6c6c;
     position: relative;
-    color: #fff;
+    color: #0f0d0d;
 }
 
 .page2 h1{
@@ -266,7 +266,7 @@ span:hover{
     width: 100%;
     padding-top: 100px;
     position: relative;
-    color: #fff;
+    color: #0f0d0d;
     padding: 5vw;
 }
 
