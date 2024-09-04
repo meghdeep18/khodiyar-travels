@@ -11,6 +11,9 @@ body {
     color: white;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+}
 /* .cursor{
     height: 20px;
     width: 20px;
