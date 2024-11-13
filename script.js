@@ -167,7 +167,7 @@ navElements.forEach((element, idx) => {
 
 document.querySelector('#nav').addEventListener('mouseleave', function(){
     navhover.style.display = "none";
-    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+    cursor.style.transform = "translate(-50%, -5    0%) scale(1)";
 })
 
 
