@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Khodiyar Travels</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <img src="Screenshot_2024-08-11_113731-removebg-preview.png" alt="Khodiyar Travels Logo">
+            <div id="nav-part2">
+                <a href="index.html"><h4>Home</h4></a>
+                <a href="work.html"><h4>Work</h4></a>
+                <a href="#"><h4>Office</h4></a>
+                <a href="contact.html"><h4>Contact</h4></a>
+            </div>
+            <div id="nav-part3">
+                <div id="circle"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <div class="contact-wrapper">
+                <div class="left-section">
+                    <h2 class="subtitle">Get in Touch</h2>
+                    <p>We'd love to hear from you!</p>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <!-- <i class="fas fa-map-marker-alt"></i>  currently not adding the address --> 
+                            <span></span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+919998011851</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@khodiyartravels.com</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a> -->
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <form id="contactForm" action="{}">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="input-animation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="input-animation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <div class="input-animation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <div class="input-animation"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="upper">
+            <div class="footer-text">
+                <h2>LET'S CREATE AN EXPERIENCE AS</h2>
+                <h2>REMARKABLE AS KHODIYAR-TRAVELS</h2>
+            </div>
+            <div class="circle">Get in Touch</div>
+        </div>
+        <div id="string">
+            <!-- SVG string animation here -->
+        </div>
+        <div class="lower">
+            <div class="left">
+                <h4>Swift Passports, Seamless Journeys -- Khodiyar Travels</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>©2023 LAXMANINH CHUDASMA | Privacy Policy</p>
+            </div>
+            <div class="right">
+                <h1>contact@khodiyartravels.com</h1>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-message" class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <p>Message sent successfully!</p>
+    </div>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
