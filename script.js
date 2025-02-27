@@ -1,3 +1,4 @@
+
 var cursor = document.querySelector('.cursor');
 var main = document.querySelector('.main');
 var videos = document.querySelectorAll('video');
@@ -502,7 +503,7 @@ string.addEventListener("mouseleave",function(){
 })
 // 
 
-const afkTime = 20000; // 5 seconds of inactivity
+const afkTime = 20000; // 20 seconds of inactivity
 let timer = null;
 let isAfk = false;
 
@@ -572,6 +573,15 @@ function startScribbleEffect() {
     });
   }
 
+  let elementTimer = setInterval(() => {
+    if (!isAfk) {
+      clearInterval(elementTimer);
+      return;
+    }
+    drawRandomElement();
+    renderElements();
+  }, 500); // Add a new element every 500ms
+
   function clearWithDissolveEffect() {
     const dissolveInterval = setInterval(() => {
       elements.forEach((element) => {
@@ -588,16 +598,6 @@ function startScribbleEffect() {
       }
     }, 50);
   }
-
-  function animateScribble() {
-    if (isAfk) {
-      drawRandomElement();
-      renderElements();
-      requestAnimationFrame(animateScribble);
-    }
-  }
-
-  animateScribble();
 
   // Stop effect on user activity
   function stopScribbleEffect() {
